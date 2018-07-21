@@ -1,0 +1,65 @@
+html{
+    background-color: rgb(254, 145, 38, 0.7);
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas:
+    ". . ."
+    ". formulario-registro ."
+    ". . ."
+}.form-header{
+    height: 50px;
+    text-align: center;
+}
+
+
+
+.formulario-registro{
+    grid-area: formulario-registro;
+    background-color: #ffffff;
+}
+
+.div-formulario{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 2fr 100px 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ". . . . ."
+    ". label1 . input1 ."
+    ". . . . ."
+    ". label2 . input2 ."
+    ". . . . ." 
+    ". label3 . . ."
+    ". . . . ." 
+}
+
+.label1{
+    grid-area: label1;
+    font-size: 30px
+}
+
+.input1{
+    grid-area: input1;
+    width: 300px;
+    height: 30px;
+}
+
+.label2{
+    grid-area: label2;
+    font-size: 30px
+}
+
+.input2{
+    grid-area: input2;
+    width: 300px;
+    height: 30px;
+}
+
+.label3{
+    grid-area: label3;
+    font-size: 30px
+}

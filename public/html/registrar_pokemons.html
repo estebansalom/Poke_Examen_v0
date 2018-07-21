@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Registrar Pokemon*</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/pokedex_estandares.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/poke_estandares.css" />
     <link rel="stylesheet" href="../css/registrar_pokemons.css" />
 
 </head>
@@ -13,22 +14,23 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">Inicio</a>
-            <a href=""
+            <h1>Inicio</h1>
         </nav>
     </header>
     <main>
         <section class="main-grid">
-            <div class="registroPokemon">
-                <header class="header">
-                    <title class="">Registrar Pokemones</title>
+            <div class="formulario-registro">
+                <header class="form-header">
+                    <h2>Registro de Pokemones</h2>
                 </header>
-                <label for="txtNombre">Nombre</label>
-                <input type="text" placeholder="Nombre del pokemon" required>
-                <label for="txtNumero">Numero</label>
-                <input type="number" placeholder="Codigo en el pokedex" required>
+                <div class="div-formulario float">
+                    <label for="txtNombre" class="label1 float-left">Nombre</label>
+                    <input type="text" class="input1 float-right" id="txtNombre" required placeholder="Nombre del Pokemon">
+
+                    <label for="numCodigo" class="label2 float-left">Numero</label>
+                    <input type="number" class="input2 float-right" id="numCodigo" required placeholder="Numero en la pokedex">
                 
-                    </div>
+                    <label for="tipo" class="label3 float-left">Tipo</label>
                 </div>
             </div>
         </section>

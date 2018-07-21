@@ -100,7 +100,7 @@ header{
 
 .boton-registro{
     grid-area: registrar;
-    background-color: rgb(254, 145, 38);
+    background-color: #3399cc;
     box-shadow: 0px 1px 3px #000000;
     
 }
@@ -108,7 +108,7 @@ header{
 .boton-registro> nav a{
     text-decoration: none;
     font-size: 25px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .body-main{
