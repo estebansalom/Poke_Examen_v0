@@ -51,3 +51,8 @@ header{
     text-decoration: none;
     padding: 20px;
 }
+
+.errorInput{
+    border-width: 3px;
+    border-color: rgb(254, 145, 38)
+}

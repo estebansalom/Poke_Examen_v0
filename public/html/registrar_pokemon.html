@@ -28,13 +28,21 @@
                     <input type="text" class="input1 float-right" id="txtNombre" required placeholder="Nombre del Pokemon">
 
                     <label for="numCodigo" class="label2 float-left">Numero</label>
-                    <input type="number" class="input2 float-right" id="numCodigo" required placeholder="Numero en la pokedex">
+                    <input type="text" class="input2 float-right" id="txtCodigo" required placeholder="Numero en la pokedex">
                 
                     <label for="tipo" class="label3 float-left">Tipo</label>
+
+                    <button type="button" id="btnCancelar">Cancelar</button>
+
+                    <button type="button" id="btnRegistrar">Registrar</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="../js/servicio_pokemones.js"></script>
+    <script src="../js/controladores/jquery3.1.1.js"></script>
+    <script src="../js/controladores/registrar/controlador_registrar_pokemons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
 </body>
 
 </html>

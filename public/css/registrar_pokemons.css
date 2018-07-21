@@ -31,7 +31,7 @@ html{
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 2fr 100px 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
     ". . . . ."
     ". label1 . input1 ."
@@ -39,6 +39,8 @@ html{
     ". label2 . input2 ."
     ". . . . ." 
     ". label3 . . ."
+    ". . . . ."
+    ". cancelar . registrar ."
     ". . . . ." 
 }
 
@@ -67,4 +69,12 @@ html{
 .label3{
     grid-area: label3;
     font-size: 30px
+}
+
+#btnCancelar{
+    grid-area: cancelar;
+}
+
+#btnRegistrar{
+    grid-area: registrar;
 }

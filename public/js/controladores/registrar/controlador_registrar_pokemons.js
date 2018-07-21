@@ -3,18 +3,19 @@ let botonRegistrar = document.querySelector('#btnRegistrar');
 botonRegistrar.addEventListener('click', obtenerDatos);
 
 let inputNombre = document.querySelector('#txtNombre');
-let inputCodigo = document.querySelector('#numCodigo');
+let inputCodigo = document.querySelector('#txtCodigo');
 
 let regexSoloLetras = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/;
 let regexCodigo = /^[0-999]{1,3}$/;
 
-let sNombre = '';
-let nCodigo = 0;
+let sNombre = "";
+let sCodigo = "";
 
 function obtenerDatos(){
     let infoPokemon = [];
+
     sNombre = inputNombre.value;
-    nCodigo = Number(inputCodigo.value);
+    sCodigo = inputCodigo.value;
 
     let bError = false;
     bError = validar();
@@ -33,10 +34,10 @@ function obtenerDatos(){
             type: 'success',
             confirmButtonText: 'Entendido'
         });
-        infoPokemon.push(sNombre, nCodigo);
+        infoPokemon.push(sNombre, sCodigo);
         registrarPokemon(infoPokemon);
         $('.swal2-confirm').click(function(){
-            window.location.href = '../html/listar_carreras.html';
+            window.location.href = '../html/listar_pokemones.html';
       });
         limpiarFormulario();
     }
@@ -46,7 +47,7 @@ function validar ()
 {
     let bError = false;
     sNombre = inputNombre.value;
-    nCodigo = Number(inputCodigo.value);
+    sCodigo = inputCodigo.value;
     // Validacion contra blancos
     let arregloInputs = document.querySelectorAll('input:required');
     for (let i = 0; i < arregloInputs.length; i++) {
@@ -75,5 +76,11 @@ function validar ()
         inputCodigo.classList.remove('errorInput');
     };
 
-    return bError
+    return bError;
+};
+
+function limpiarFormulario ()
+{
+    inputNombre.value = "";
+    inputCodigo.value = "";
 };
