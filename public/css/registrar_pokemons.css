@@ -1,11 +1,16 @@
 html{
-    background-color: rgb(254, 145, 38, 0.7);
+    background-color: #ffffff;
 }
 
 .main-grid{
+    background-image: url(../img/parallax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     display: grid;
     grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 70px 1fr 60px;
     grid-template-areas:
     ". . ."
     ". formulario-registro ."
