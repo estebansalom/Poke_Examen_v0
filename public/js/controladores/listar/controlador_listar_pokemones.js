@@ -23,21 +23,19 @@ function mostrarListaPokemones(paBuscar) {
                 let fila = tbody.insertRow();
 
                 let celdaFoto = fila.insertCell();
-                let imagen = document.createElement('img');
-                imagen.src = sListaPokemon[i]['foto']; --> Aquí cambia 'sListaPokemon' por su lista y 'foto' por el nombre de su campo
-                imagen.classList.add('imageSettings');
-                celdaFoto.appendChild(imagen);
                 let celdaNombre = fila.insertCell();
                 let celdaCodigo = fila.insertCell();
                 let celdaTipo1 = fila.insertCell();
                 let celdaTipo2 = fila.insertCell();
 
                 let imagen = document.createElement('img');
-
                 imagen.src = listaPokemones[i]['foto_pokemon'];
+                imagen.classList.add('imageSettings');
+                celdaFoto.appendChild(imagen);
+                
                 celdaNombre.innerHTML = listaPokemones[i]['nombre_pokemon'];
                 celdaCodigo.innerHTML = listaPokemones[i]['codigo_pokemon'];
-                celdaTipo1.innerHTML = listaPokemones[i]['tipo1_pokemon']
+                celdaTipo1.innerHTML = listaPokemones[i]['tipo1_pokemon'];
                 celdaTipo2.innerHTML = listaPokemones[i]['tipo2_pokemon'];
             }
         }
@@ -52,10 +50,14 @@ function mostrarListaPokemones(paBuscar) {
             let celdaTipo1 = fila.insertCell();
             let celdaTipo2 = fila.insertCell();
 
-            celdaFoto.innerHTML = listaPokemones[i]['foto_pokemon'];
+            let imagen = document.createElement('img');
+            imagen.src = listaPokemones[i]['foto_pokemon'];
+            imagen.classList.add('imageSettings');
+            celdaFoto.appendChild(imagen);
+
             celdaNombre.innerHTML = listaPokemones[i]['nombre_pokemon'];
             celdaCodigo.innerHTML = listaPokemones[i]['codigo_pokemon'];
-            celdaTipo1.innerHTML = listaPokemones[i]['tipo1_pokemon']
+            celdaTipo1.innerHTML = listaPokemones[i]['tipo1_pokemon'];
             celdaTipo2.innerHTML = listaPokemones[i]['tipo2_pokemon'];
 
 
