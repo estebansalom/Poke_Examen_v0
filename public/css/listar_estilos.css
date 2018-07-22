@@ -131,3 +131,10 @@ header{
     margin-top: 70px;
     background-color: #ffffff
 }
+
+table{
+    background-color: gainsboro;
+    width: 867px;
+    height: 500px;
+}
+

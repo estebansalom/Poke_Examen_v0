@@ -12,7 +12,7 @@ $(function() {
     // Upload button event
     uploadButton.on('click', function(e){
         // Initiate upload
-        cloudinary.openUploadWidget({ cloud_name: 'esalomc', upload_preset: 'te1dzzc2', tags: ['cgal']},
+        cloudinary.openUploadWidget({ cloud_name: 'esalomc', upload_preset: 'esalomcpreset'},
         function(error, result) {
             if(error) console.log(error);
             // If NO error, log image data to console

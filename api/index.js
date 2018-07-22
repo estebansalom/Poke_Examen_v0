@@ -14,7 +14,7 @@ const express = require('express'),
  * Se definen las variables necesarias para la conexión con MongoDB
  */
 let db = mongoose.connection,
-    dburl = 'mongodb://estebansalom:Esteban99@ds125851.mlab.com:25851/sedes',
+    dburl = 'mongodb://estebansalom:Esteban99@ds143451.mlab.com:43451/esteban',
     port = 4000;
 
 /**

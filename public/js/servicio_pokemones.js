@@ -10,8 +10,9 @@ function registrarPokemon (paInfoPokemon)
         dataType: 'json',
         async: false,
         data: {
-            nombre_pokemon: paInfoPokemon[0],
-            codigo_pokemon: paInfoPokemon[1]
+            foto_pokemon: paInfoPokemon[0],
+            nombre_pokemon: paInfoPokemon[1],
+            codigo_pokemon: paInfoPokemon[2]
         }
     });
 
@@ -27,3 +28,31 @@ function registrarPokemon (paInfoPokemon)
 
     return respuesta;
 }
+
+function obtenerListaPokemones(){
+    let listaPokemones = [];
+
+    let respuesta = '';
+    let peticion = $.ajax({
+        url : 'http://localhost:4000/api/listar_pokemones',
+        type : 'get',
+        contentType : 'application/x-www-form-urlencoded; charset=utf-8',
+        dataType : 'json',
+        async : false,
+        data:{
+            
+        }
+      });
+    
+      peticion.done(function(response){
+       respuesta = response;
+      });
+    
+      peticion.fail(function(response){
+       
+      });
+
+      return respuesta;
+    
+};
+

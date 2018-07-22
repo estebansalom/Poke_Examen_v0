@@ -1,8 +1,9 @@
 'use strict';
 const pokemonModel = require('./pokemons.model');
 
-module.exports.registrarPokemon = function (req, res) {
+module.exports.registrar_pokemon = function (req, res) {
     let nuevoPokemon = new pokemonModel({
+        foto_pokemon: req.body.foto_pokemon,
         nombre_pokemon: req.body.nombre_pokemon,
         codigo_pokemon: req.body.codigo_pokemon,
     });
@@ -19,4 +20,14 @@ module.exports.registrarPokemon = function (req, res) {
             });
         }
     });
+};
+
+module.exports.listar_pokemones = function (req, res)
+{
+    pokemonModel.find().sort({ nombre_pokemon: 'asc' }).then(
+        function (Pokemons)
+        {
+            res.send(Pokemons);
+        }
+    );
 };
