@@ -6,6 +6,8 @@ module.exports.registrar_pokemon = function (req, res) {
         foto_pokemon: req.body.foto_pokemon,
         nombre_pokemon: req.body.nombre_pokemon,
         codigo_pokemon: req.body.codigo_pokemon,
+        tipo1_pokemon: req.body.tipo1_pokemon,
+        tipo2_pokemon: req.body.tipo2_pokemon
     });
     nuevoPokemon.save(function (error) {
         if (error) {
@@ -22,12 +24,12 @@ module.exports.registrar_pokemon = function (req, res) {
     });
 };
 
-module.exports.listar_pokemones = function (req, res)
+module.exports.listar_pokemon = function (req, res)
 {
     pokemonModel.find().sort({ nombre_pokemon: 'asc' }).then(
-        function (Pokemons)
+        function (pokemones)
         {
-            res.send(Pokemons);
+            res.send(pokemones);
         }
     );
 };

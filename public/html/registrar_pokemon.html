@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="y-align float">
-            <a href=".//index.html" class="header-inicio float-left">Inicio</a>
+            <a href="index.html" class="header-inicio float-left">Inicio</a>
             <a class="header-button float-right">Registrar</a>
             <a class="header-button float-right">Listar</a>
         </nav>
@@ -23,7 +23,7 @@
         <section class="main-grid">
             <div class="formulario-registro">
                 <header class="form-header">
-                    <h3>Registro de Pokemones</h3>
+                    <h3>Registra un Pokemon</h3>
                 </header>
                 <div class="div-formulario float">
                     <label class="label-foto float-left">Foto</label>
@@ -38,7 +38,17 @@
                     <label for="numCodigo" class="label2 float-left">Numero</label>
                     <input type="text" class="input2 float-right" id="txtCodigo" required placeholder="Numero en la pokedex">
 
-                    <label for="tipo" class="label3 float-left">Tipo</label>
+                    <label for="tipo" class="label3 float-left">Tipo 1</label>
+                    <select id="txtTipo1">
+                        <option value="Fuego">Fuego</option>
+                        <option value="Fuego">Agua</option>
+                    </select>
+
+                    <label for="tipo" class="label4 float-left">Tipo 2</label>
+                    <select id="txtTipo2">
+                        <option value="Fuego">Fuego</option>
+                        <option value="Agua">Agua</option>
+                    </select>
 
                     <button type="button" id="btnCancelar">Cancelar</button>
 

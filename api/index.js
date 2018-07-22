@@ -62,11 +62,11 @@ app.use( function(req, res, next) {
 /**
  * Exportams todas las rutas dentro del index.js
  */
-const pokemons = require('./components/pokemons/pokemons.route');
+const pokemones = require('./components/pokemons/pokemons.route');
 /**
  * Le indicamos que le de acceso externo a las rutas inicializadas
  */
-app.use('/api', pokemons);
+app.use('/api', pokemones);
 
 
 // Se guarda todo lo que se ha realizado

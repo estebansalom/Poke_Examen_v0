@@ -10,6 +10,6 @@ router.route('/registrar_pokemon')
 
 router.route('/listar_pokemon')
     .get(function (req, res) {
-        carrerasApi.listar_pokemones(req, res);
+        pokemonsApi.listar_pokemon(req, res);
     });
 module.exports = router;

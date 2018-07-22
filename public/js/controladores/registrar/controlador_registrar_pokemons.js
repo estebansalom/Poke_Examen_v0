@@ -1,21 +1,56 @@
 'use strict'
+
+/*function cargarTipo1() {
+    let tipo1_pokemon = ['Fuego', 'Agua', 'Planta', 'Insecto', 'Dragón', 'Fantasma', 'Eléctrico', 'Lucha', 'Hada', 
+    'Volador', 'Hielo', 'Roca', 'Normal', 'Hierro', 'Tierra', 'Veneno', 'Psiquico', 'Siniestro'];
+    let select = document.querySelector('#txtTipo1'); //Seleccionamos el select
+    
+    for(let i=0; i < tipo1_pokemon.length; i++){ 
+        let option = document.createElement('option'); //Creamos la opcion
+        option.innerHTML = tipo1_pokemon[i]; //Metemos el texto en la opción
+        option.value = tipo1_pokemon[i];
+        select.appendChild(option); //Metemos la opción en el select
+    }
+};
+
+
+function cargarTipo2() {
+    let tipo1_pokemon = ['Fuego', 'Agua', 'Planta', 'Insecto', 'Dragón', 'Fantasma', 'Eléctrico', 'Lucha', 'Hada', 
+    'Volador', 'Hielo', 'Roca', 'Normal', 'Hierro', 'Tierra', 'Veneno', 'Psiquico', 'Siniestro'];
+    let select = document.querySelector('#txtTipo2'); //Seleccionamos el select
+    
+    for(let i=0; i < tipo2_pokemon.length; i++){ 
+        let option = document.createElement('option'); //Creamos la opcion
+        option.innerHTML = tipo2_pokemon[i]; //Metemos el texto en la opción
+        option.value = tipo1_pokemon[i];
+        select.appendChild(option); //Metemos la opción en el select
+    }
+};*/
+
 let botonRegistrar = document.querySelector('#btnRegistrar');
 botonRegistrar.addEventListener('click', obtenerDatos);
 
 let inputNombre = document.querySelector('#txtNombre');
 let inputCodigo = document.querySelector('#txtCodigo');
+let inputTipo1 = document.querySelector('#txtTipo1');
+let inputTipo2 = document.querySelector('#txtTipo2');
 
 let regexSoloLetras = /^[a-zA-Z0-9]+$/;
 let regexCodigo = /^[0-999]{1,3}$/;
 
 let sNombre = "";
 let sCodigo = "";
+let sTipo1 = "";
+let sTipo2 = ""
+
 
 function obtenerDatos(){
     let infoPokemon = [];
 
     sNombre = inputNombre.value;
     sCodigo = inputCodigo.value;
+    sTipo1 = inputTipo1.value;
+    sTipo2 = inputTipo2.value;
 
     let bError = false;
     bError = validar();
@@ -35,8 +70,8 @@ function obtenerDatos(){
             confirmButtonText: 'Entendido'
         });
         console.log(imagenUrl)
-        infoPokemon.push(imagenUrl, sNombre, sCodigo);
-        registrarPokemon(infoPokemon);
+        infoPokemon.push(imagenUrl, sNombre, sCodigo, sTipo1, sTipo2);
+        registrarPokemon(infoPokemon)
         $('.swal2-confirm').click(function(){
             window.location.href = '../html/listar_pokemones.html';
       });
@@ -84,4 +119,6 @@ function limpiarFormulario ()
 {
     inputNombre.value = "";
     inputCodigo.value = "";
+    inputTipo1.value = "";
+    inputTipo2.value = "";
 };
