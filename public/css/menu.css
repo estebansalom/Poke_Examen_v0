@@ -1,0 +1,65 @@
+nav span:hover{
+    color: 	rgba(230,227,234,0.3);
+}
+
+#menuRegistrar{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;;
+    z-index: 1;
+    width: 225px;
+    height: 300px;
+    background: linear-gradient(0deg,rgba(0,0,0,0), rgba(68,27,73,0.75));
+}
+
+#menuRegistrar div{
+    margin: 40px;
+    height: 300px;
+}
+
+#menuRegistrar a{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+}
+#menuRegistrar a:hover{
+    color: #9d9d9d;
+}
+
+nav span:hover{
+    color: 	rgba(230,227,234,0.3);
+}
+
+#menuListar{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;;
+    z-index: 1;
+    width: 225px;
+    height: 300px;
+    background: linear-gradient(0deg,rgba(0,0,0,0), rgba(68,27,73,0.75));
+}
+
+#menuListar div{
+    margin: 40px;
+    height: 300px;
+}
+
+#menuListar a{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+}
+#menuListar a:hover{
+    color: #9d9d9d;
+}

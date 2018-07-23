@@ -15,11 +15,23 @@
 
 <body>
     <header>
-        <nav class="y-align float">
-            <a href="./index.html" class="header-inicio float-left">Inicio</h1>
-                <a href="./registrar_pokemon.html" class="header-button float-right">Registrar</a>
-                <a href="./listar_pokemones.html" class="header-button float-right">Listar</a>
+        <nav class="float">
+            <a href="index.html" class="header-inicio float-left">Inicio</a>
+            <button id="headerRegistrar" class="header-button float-right">Registrar</button>
+            <button id="headerListar" class="header-button float-right">Listar</button>
         </nav>
+        <div id="menuListar" class="hide">
+            <div>
+                <a href="../html/listar_pokemones.html">Pokemones</a>
+                <a href="../html/index.html">Entrenadores</a>
+            </div>
+        </div>
+        <div id="menuRegistrar" class="hide">
+            <div>
+                <a href="../html/registrar_pokemon.html">Pokemones</a>
+                <a href="../html/registrar_entrenador.html">Entrenadores</a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="main-grid">
@@ -46,7 +58,7 @@
             <section class="body-main">
                 <table id="main-list" class="main-list">
                     <thead>
-                        <tr>
+                        <tr class="table-header">
                             <th>Foto</th>
                             <th>Nombre</th>
                             <th>Codigo</th>
@@ -58,7 +70,9 @@
                     </tbody>
                 </table>
             </section>
-        </section>
+            <section class="footer">
+                <footer </section>
+            </section>
     </main>
     <script src="../js/jquery3.1.1.js"></script>
     <script src="../js/controladores/controladorImagen.js"></script>

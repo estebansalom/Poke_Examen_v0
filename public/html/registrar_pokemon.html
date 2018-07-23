@@ -13,11 +13,23 @@
 
 <body>
     <header>
-        <nav class="y-align float">
+        <nav class="float">
             <a href="index.html" class="header-inicio float-left">Inicio</a>
-            <a class="header-button float-right">Registrar</a>
-            <a class="header-button float-right">Listar</a>
+            <button id="headerRegistrar" class="header-button float-right">Registrar</button>
+            <button id="headerListar" class="header-button float-right">Listar</button>
         </nav>
+        <div id="menuListar" class="hide">
+            <div>
+                <a href="../html/listar_pokemones.html">Pokemones</a>
+                <a href="../html/index.html">Entrenadores</a>
+            </div>
+        </div>
+        <div id="menuRegistrar" class="hide">
+            <div>
+                <a href="../html/registrar_pokemon.html">Pokemones</a>
+                <a href="../html/registrar_entrenador.html">Entrenadores</a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="main-grid">
@@ -39,15 +51,47 @@
                     <input type="text" class="input2 float-right" id="txtCodigo" required placeholder="Numero en la pokedex">
 
                     <label for="tipo" class="label3 float-left">Tipo 1</label>
-                    <select id="txtTipo1">
+                    <select id="txtTipo1" class="input3" required>
                         <option value="Fuego">Fuego</option>
-                        <option value="Fuego">Agua</option>
+                        <option value="Agua">Agua</option>
+                        <option value="Planta">Planta</option>
+                        <option value="Insecto">Insecto</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Fantasma">Fantasma</option>
+                        <option value="Electrico">Electrico</option>
+                        <option value="Lucha">Lucha</option>
+                        <option value="Hada">Hada</option>
+                        <option value="Volador">Volador</option>
+                        <option value="Hielo">Hielo</option>
+                        <option value="Roca">Roca</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Hierro">Hierro</option>
+                        <option value="Tierra">Tierra</option>
+                        <option value="Veneno">Veneno</option>
+                        <option value="Psiquico">Psiquico</option>
+                        <option value="Siniestro">Siniestro</option>
                     </select>
 
                     <label for="tipo" class="label4 float-left">Tipo 2</label>
-                    <select id="txtTipo2">
+                    <select id="txtTipo2" class="input4">
                         <option value="Fuego">Fuego</option>
                         <option value="Agua">Agua</option>
+                        <option value="Planta">Planta</option>
+                        <option value="Insecto">Insecto</option>
+                        <option value="Dragon">Dragon</option>
+                        <option value="Fantasma">Fantasma</option>
+                        <option value="Electrico">Electrico</option>
+                        <option value="Lucha">Lucha</option>
+                        <option value="Hada">Hada</option>
+                        <option value="Volador">Volador</option>
+                        <option value="Hielo">Hielo</option>
+                        <option value="Roca">Roca</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Hierro">Hierro</option>
+                        <option value="Tierra">Tierra</option>
+                        <option value="Veneno">Veneno</option>
+                        <option value="Psiquico">Psiquico</option>
+                        <option value="Siniestro">Siniestro</option>
                     </select>
 
                     <button type="button" id="btnCancelar">Cancelar</button>

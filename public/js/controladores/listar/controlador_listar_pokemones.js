@@ -10,6 +10,14 @@ botonBuscar.addEventListener('click', function () {
     mostrarListaPokemones(busqueda);
 });
 
+inputBuscar.addEventListener('keyup', function () {
+
+    let busqueda = inputBuscar.value;
+    mostrarListaPokemones(busqueda);
+});
+
+
+
 
 
 function mostrarListaPokemones(paBuscar) {
@@ -19,7 +27,48 @@ function mostrarListaPokemones(paBuscar) {
     tbody.innerHTML = '';
     if (paBuscar != undefined) {
         for (let i = 0; i < listaPokemones.length; i++) {
-            if (listaPokemones[i]['foto_pokemon'].toLowerCase().includes(paBuscar.toLowerCase())) {
+            if (listaPokemones[i]['nombre_pokemon'].toLowerCase().includes(paBuscar.toLowerCase())) {
+                let fila = tbody.insertRow();
+
+                let celdaFoto = fila.insertCell();
+                let celdaNombre = fila.insertCell();
+                let celdaCodigo = fila.insertCell();
+                let celdaTipo1 = fila.insertCell();
+                let celdaTipo2 = fila.insertCell();
+
+                let imagen = document.createElement('img');
+                imagen.src = listaPokemones[i]['foto_pokemon'];
+                imagen.classList.add('imageSettings');
+                celdaFoto.appendChild(imagen);
+                
+                celdaNombre.innerHTML = listaPokemones[i]['nombre_pokemon'];
+                celdaCodigo.innerHTML = listaPokemones[i]['codigo_pokemon'];
+                celdaTipo1.innerHTML = listaPokemones[i]['tipo1_pokemon'];
+                celdaTipo2.innerHTML = listaPokemones[i]['tipo2_pokemon'];
+            }
+        
+
+            if (listaPokemones[i]['tipo1_pokemon'].toLowerCase().includes(paBuscar.toLowerCase())) {
+                let fila = tbody.insertRow();
+
+                let celdaFoto = fila.insertCell();
+                let celdaNombre = fila.insertCell();
+                let celdaCodigo = fila.insertCell();
+                let celdaTipo1 = fila.insertCell();
+                let celdaTipo2 = fila.insertCell();
+
+                let imagen = document.createElement('img');
+                imagen.src = listaPokemones[i]['foto_pokemon'];
+                imagen.classList.add('imageSettings');
+                celdaFoto.appendChild(imagen);
+                
+                celdaNombre.innerHTML = listaPokemones[i]['nombre_pokemon'];
+                celdaCodigo.innerHTML = listaPokemones[i]['codigo_pokemon'];
+                celdaTipo1.innerHTML = listaPokemones[i]['tipo1_pokemon'];
+                celdaTipo2.innerHTML = listaPokemones[i]['tipo2_pokemon'];
+            }
+
+            if (listaPokemones[i]['tipo2_pokemon'].toLowerCase().includes(paBuscar.toLowerCase())) {
                 let fila = tbody.insertRow();
 
                 let celdaFoto = fila.insertCell();

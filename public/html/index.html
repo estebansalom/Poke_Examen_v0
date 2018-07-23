@@ -15,11 +15,23 @@
 
 <body>
     <header>
-        <nav class="y-align float">
-            <a href="index.html" class="header-inicio float-left">Inicio</h1>
-                <a class="header-button float-right">Registrar</a>
-                <a class="header-button float-right">Listar</a>
+        <nav class="float">
+            <a href="index.html" class="header-inicio float-left">Inicio</a>
+            <button id="headerRegistrar" class="header-button float-right">Registrar</button>
+            <button id="headerListar" class="header-button float-right">Listar</button>
         </nav>
+        <div id="menuListar" class="hide">
+            <div>
+                <a href="../html/listar_pokemones.html">Pokemones</a>
+                <a href="../html/index.html">Entrenadores</a>
+            </div>
+        </div>
+        <div id="menuRegistrar" class="hide">
+            <div>
+                <a href="../html/registrar_pokemon.html">Pokemones</a>
+                <a href="../html/registrar_entrenador.html">Entrenadores</a>
+            </div>
+        </div>
     </header>
     <main>
         <section class="main-grid">
@@ -36,7 +48,7 @@
                     </div>
                     <div class="boton-registro y-align">
                         <nav class="x-align">
-                            <a href="registrar_pokemon.html">
+                            <a href="registrar_entrenador.html">
                                 <h3>Registrar entrenador</h3>
                             </a>
                         </nav>
@@ -47,7 +59,7 @@
                 <div class="main-list">
                     <table>
                         <thead>
-                            <tr>
+                            <tr class="table-header">
                                 <th>Foto</th>
                                 <th>Nombre</th>
                                 <th>Numero</th>
@@ -59,5 +71,13 @@
         </section>
     </main>
 </body>
+<script src="../js/jquery3.1.1.js"></script>
+<script src="../js/controladores/controladorImagen.js"></script>
+<script src='https://cdn.jsdelivr.net/jquery.cloudinary/1.0.18/jquery.cloudinary.js' type='text/javascript'></script>
+<script src="https://widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+<script src="../js/servicio_entrenadores.js"></script>
+<script src="../js/controladores/controlador_menu_listar.js"></script>
+<script src="../js/controladores/controlador_menu_registrar.js"></script>
+<script src="../js/controladores/listar/controlador_listar_entrenadores.js"></script>
 
 </html>
