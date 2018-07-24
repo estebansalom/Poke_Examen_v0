@@ -46,9 +46,9 @@ function obtenerDatos() {
         console.log(imagenUrl)
         infoEntrenador.push(imagenUrl, sNombre, sCodigo, nEdad, sSexo);
         registrarEntrenador(infoEntrenador)
-        /*$('.swal2-confirm').click(function () {
-            window.location.href = '../html/listar_entrenadores.html';
-        });*/
+        $('.swal2-confirm').click(function () {
+            window.location.href = '../html/index.html';
+        });
         limpiarFormulario();
     }
 };

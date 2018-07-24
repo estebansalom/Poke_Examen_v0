@@ -24,11 +24,9 @@ module.exports.registrar_entrenador = function (req, res) {
     });
 };
 
-module.exports.listar_entrenador = function (req, res)
-{
+module.exports.listar_entrenador = function (req, res) {
     entrenadorModel.find().sort({ nombre_entrenador: 'asc' }).then(
-        function (entrenadores)
-        {
+        function (entrenadores) {
             res.send(entrenadores);
         }
     );

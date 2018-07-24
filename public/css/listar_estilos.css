@@ -147,11 +147,13 @@ th{
 }
 
 .imageSettings{
+    margin-top: 10px;
     width: 100px;
     height:100px;
 }
 
 td{
+    margin-top: 20px;
     color: #000000;
     font-size: 17px;
 }

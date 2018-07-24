@@ -16,6 +16,9 @@ inputBuscar.addEventListener('keyup', function () {
     mostrarListaEntrenadores(busqueda);
 });
 
+
+
+
 function mostrarListaEntrenadores(paBuscar) {
     let listaEntrenadores = obtenerListaEntrenadores();
 
@@ -30,7 +33,7 @@ function mostrarListaEntrenadores(paBuscar) {
                 let celdaNombre = fila.insertCell();
                 let celdaCodigo = fila.insertCell();
                 let celdaEdad = fila.insertCell();
-                let celdasexo = fila.insertCell();
+                let celdaSexo = fila.insertCell();
 
                 let imagen = document.createElement('img');
                 imagen.src = listaEntrenadores[i]['foto_entrenador'];
@@ -42,31 +45,33 @@ function mostrarListaEntrenadores(paBuscar) {
                 celdaEdad.innerHTML = listaEntrenadores[i]['edad_entrenador'];
                 celdaSexo.innerHTML = listaEntrenadores[i]['sexo_entrenador'];
 
-
-            }else {
-                for (let i = 0; i < listaEntrenadores.length; i++) {
-                    let fila = tbody.insertRow();
-
-                    let celdaFoto = fila.insertCell();
-                    let celdaNombre = fila.insertCell();
-                    let celdaCodigo = fila.insertCell();
-                    let celdaEdad = fila.insertCell();
-                    let celdaSexo = fila.insertCell();
-
-                    let imagen = document.createElement('img');
-                    imagen.src = listaEntrenadores[i]['foto_entrenador'];
-                    imagen.classList.add('imageSettings');
-                    celdaFoto.appendChild(imagen);
-
-                    celdaNombre.innerHTML = listaEntrenadores[i]['nombre_entrenador'];
-                    celdaCodigo.innerHTML = listaEntrenadores[i]['codigo_entrenador'];
-                    celdaEdad.innerHTML = listaEntrenadores[i]['edad_entrenador'];
-                    celdaSexo.innerHTML = listaEntrenadores[i]['sexo_entrenador'];
-
-
-                }
-
             }
-        };
+        }
+    } 
+    else {
+
+        for (let i = 0; i < listaEntrenadores.length; i++) {
+            let fila = tbody.insertRow();
+
+            let celdaFoto = fila.insertCell();
+            let celdaNombre = fila.insertCell();
+            let celdaCodigo = fila.insertCell();
+            let celdaEdad = fila.insertCell();
+            let celdaSexo = fila.insertCell();
+
+            let imagen = document.createElement('img');
+            imagen.src = listaEntrenadores[i]['foto_entrenador'];
+            imagen.classList.add('imageSettings');
+            celdaFoto.appendChild(imagen);
+
+            celdaNombre.innerHTML = listaEntrenadores[i]['nombre_entrenador'];
+            celdaCodigo.innerHTML = listaEntrenadores[i]['codigo_entrenador'];
+            celdaEdad.innerHTML = listaEntrenadores[i]['edad_entrenador'];
+            celdaSexo.innerHTML = listaEntrenadores[i]['sexo_entrenador'];
+
+
+        }
     }
-}
+};
+    
+
