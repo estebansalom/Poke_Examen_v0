@@ -37,14 +37,23 @@ h2{
     float: right;
 }
 
+
+.header-inicio{
+    color: rgb(254, 145, 38);
+    font-size: 60px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
 header{
     background-color:#000000;
     height: 100px;
     color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.35);
     margin-bottom: 40px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-right: 50px
 }
 
 .header-inicio{
@@ -63,7 +72,6 @@ header{
     font-size: 25px;
     font-size: 25px;
     margin: 37.5px 10px;
-
 }
 
 
@@ -71,63 +79,41 @@ nav span:hover{
     color: 	rgb(254, 145, 38, 0.3);
 }
 
-#menuRegistrar{
+#menuOpciones{
     display: none;
     position: absolute;
     top: 100px;
     right: 47px;
     z-index: 1;
     width: 180px;
-    height: 120px;
-    background: linear-gradient(0deg,rgba(0,0,0,0), rgb(254, 145, 38,0.75));
+    height: 360px;
+    background: gainsboro;
 }
 
-#menuRegistrar div{
+#menuOpciones div{
     margin: 10px;
     height: 150px;
 }
 
-#menuRegistrar a{
+#menuOpciones a{
     display: block;
     font-size: 22px;
     margin-bottom: 15px;
     text-decoration: none;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     padding-bottom: 10px;
 }
-#menuRegistrar a:hover{
+#menuOpciones a:hover{
     color: #9d9d9d;
 }
 
-#menuListar{
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: 47px;
-    z-index: 1;
-    width: 180px;
-    height: 150px;
-    background: linear-gradient(0deg,rgba(0,0,0,0), rgba(68,27,73,0.75));
+.fa-plus{
+    color: rgb(254, 145, 38);
+    font-size: 2.5em;
 }
 
-#menuListar div{
-    margin: 40px;
-    height: 300px;
-}
 
-#menuListar a{
-    display: block;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 10px;
-}
-#menuListar a:hover{
-    color: #9d9d9d;
-}
 .errorInput{
     border-width: 3px;
     border-color: rgb(254, 145, 38)

@@ -57,6 +57,30 @@ function obtenerListaEntrenadores() {
 
 };
 
+function obtener_entrenador_por_id(pid){
+    let entrenador = '';
+    let peticion = $.ajax({
+        url : 'http://localhost:4000/api/buscar_entrenador_id',
+        type : 'post',
+        contentType : 'application/x-www-form-urlencoded; charset=utf-8',
+        dataType : 'json',
+        async : false,
+        data:{
+            _id : pid
+        }
+      });
+    
+      peticion.done(function(response){
+        entrenador = response;
+      });
+    
+      peticion.fail(function(response){
+       
+      });
+
+      return entrenador;
+};
+
 
 
 

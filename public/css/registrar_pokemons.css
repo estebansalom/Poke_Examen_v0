@@ -21,7 +21,9 @@ h3{
     ". . ."
     ". formulario-registro ."
     ". . ."
-}.form-header{
+}
+
+.form-header{
     height: 50px;
     text-align: center;
 }
@@ -127,4 +129,11 @@ h3{
 
 #btnRegistrar{
     grid-area: registrar;
+}
+
+.footer{
+    margin-top: 40px;
+    grid-area: footer;
+    background-color: #000000;
+    height: 100px;
 }

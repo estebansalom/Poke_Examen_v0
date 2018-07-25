@@ -31,3 +31,11 @@ module.exports.listar_entrenador = function (req, res) {
         }
     );
 };
+
+module.exports.buscar_entrenador_por_id = function (req, res) {
+    entrenadorModel.findById({ _id: req.body._id }).then(
+        function (entrenador) {
+            res.send(entrenador);
+        }
+    );
+};

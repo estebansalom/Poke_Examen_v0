@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Entrenadores Pokemon</title>
+    <title>Entrenadores Pokémon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/poke_estandares.css" />
@@ -17,19 +17,16 @@
     <header>
         <nav class="float">
             <a href="index.html" class="header-inicio float-left">Inicio</a>
-            <button id="headerRegistrar" class="header-button float-right">Registrar</button>
-            <button id="headerListar" class="header-button float-right">Listar</button>
+            <button id="headerOpciones" class="header-button float-right">Opciones</button>
         </nav>
-        <div id="menuListar" class="hide">
-            <div>
-                <a href="../html/listar_pokemones.html">Pokemones</a>
-                <a href="../html/index.html">Entrenadores</a>
-            </div>
         </div>
-        <div id="menuRegistrar" class="hide">
+        <div id="menuOpciones" class="hide">
             <div>
-                <a href="../html/registrar_pokemon.html">Pokemones</a>
-                <a href="../html/registrar_entrenador.html">Entrenadores</a>
+                <a href="../html/registrar_pokemon.html"> Registrar pokémones</a>
+                <a href="../html/registrar_entrenador.html">Registrar entrenadores</a>
+                <a href="../html/listar_pokemones.html">Listar pokémones</a>
+                <a href="../html/index.html">Listar entrenadores</a>
+                <a href="../html/capturar_pokemones.html">Capturar pokémones</a>
             </div>
         </div>
     </header>
@@ -38,7 +35,7 @@
             <section id="body-top" class="body-top">
                 <div class="body-top-card">
                     <div class="title y-align">
-                        <h2 class="x-align">Entrenadores Pokemon</h1>
+                        <h2 class="x-align">Entrenadores Pokémon</h1>
                     </div>
                     <div class="searchbar float">
                         <input type="text" placeholder="Buscar entrenadores..." id="txtBusqueda" class="float-left">
@@ -65,13 +62,18 @@
                                 <th>Codigo</th>
                                 <th>Edad</th>
                                 <th>Sexo</th>
+                                <th>Opciones</th>
                             </tr>
                         </thead>
                         <tbody>
-
                         </tbody>
                     </table>
                 </div>
+            </section>
+            <section class="footer">
+                <footer>
+
+                </footer>
             </section>
         </section>
     </main>

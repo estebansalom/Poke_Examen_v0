@@ -1,18 +1,18 @@
 'use strict';
 // Utilizando jquery, hago que el menu cambie si display al presionar el boton
-$("#headerRegistrar").click(function(){
+$("#headerOpciones").click(function(){
     showMenu();
 });
 
-$("#menuRegistrar").mouseleave(function(){
+$("#menuOpciones").mouseleave(function(){
     hideMenu();
 });
 
 function showMenu(){
-    if ($("#menuRegistrar").css("display") === 'none') {
-        $("#menuRegistrar").fadeIn("slow");
+    if ($("#menuOpciones").css("display") === 'none') {
+        $("#menuOpciones").fadeIn("slow");
     }
 };
 function hideMenu(){
-    $("#menuRegistrar").fadeOut("slow");
+    $("#menuOpciones").fadeOut("slow");
 };
